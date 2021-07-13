@@ -10,7 +10,7 @@ var elResultBox = elForm.querySelector('.result-box');
 function submitElForm(evt) {
 	evt.preventDefault();
 	var numberInput = Number(elNumberInput.value.trim());
-	elResultBox.textContent = `${numberInput}UZS = ${numberInput/elSelectInput.value}`;
+	elResultBox.textContent = `${numberInput}UZS = ${(numberInput/elSelectInput.value).toFixed(3)}`;
 }
 
 elForm.addEventListener('submit', submitElForm);

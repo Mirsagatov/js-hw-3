@@ -5,7 +5,6 @@ var elResultBox = elForm.querySelector('.result-box');
 
 
 
-//console.log(fizzBuzz(30));
 
 function submitElForm(evt) {
 	evt.preventDefault();
